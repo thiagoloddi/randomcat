@@ -32,8 +32,10 @@ const Home: React.FC = () => (
   <StyledPage>
     <PageTitle>RANDOM CAT</PageTitle>
     <Gif>
-      <img src="/cat-gif-1.gif" alt="cat gif" />
-      <a href="http://google.com">Vai pro google</a>
+      <img
+        src="https://media1.tenor.com/images/7065b46abffb3500cdb93a6f50462960/tenor.gif"
+        alt="cat gif"
+      />
     </Gif>
   </StyledPage>
 );

@@ -15,8 +15,8 @@ functions:
       - http: ANY /{proxy+}
 plugins:
   - serverless-apigw-binary
-  - serverless-domain-manager
 custom:
+  secrets: ${file(secrets.json)}
   apigwBinary:
     types:
       - "*/*"
