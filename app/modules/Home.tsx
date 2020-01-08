@@ -14,29 +14,25 @@ const PageTitle = styled.h1`
   text-align: center;
 `;
 
-const Gif = styled.div`
-  img {
-    @media (min-width: 550px) {
-      max-height: 480px;
-      max-width: 480px;
-    }
+const Gif = styled.img`
+  @media (min-width: 550px) {
+    max-height: 480px;
+    max-width: 480px;
+  }
 
-    @media (max-width: 550px) {
-      max-height: 100%;
-      max-width: 100%;
-    }
+  @media (max-width: 550px) {
+    max-height: 100%;
+    max-width: 100%;
   }
 `;
 
 const Home: React.FC = () => (
   <StyledPage>
     <PageTitle>RANDOM CAT</PageTitle>
-    <Gif>
-      <img
-        src="https://media1.tenor.com/images/7065b46abffb3500cdb93a6f50462960/tenor.gif"
-        alt="cat gif"
-      />
-    </Gif>
+    <Gif
+      src="https://media1.tenor.com/images/7065b46abffb3500cdb93a6f50462960/tenor.gif"
+      alt="cat gif"
+    />
   </StyledPage>
 );
 
